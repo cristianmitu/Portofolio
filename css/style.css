@@ -40,7 +40,8 @@ nav{
 }
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  min-height: 100px;
   height: 10vh;
   background-color: rgb(44, 131, 189);
   border-radius: 2px;
@@ -60,7 +61,6 @@ header ul li {
 header h1 {
   display: flex;
   justify-content: flex-start;
-  margin-left: 20px;
   justify-content: center;
   align-items: center;
   color: white;
@@ -83,4 +83,34 @@ header h1 {
   justify-content: center;
   align-items: center;
   color: white;
+}
+
+.page-section-about{
+display: flex;
+justify-content: space-around;
+align-items: center;
+margin-top: 5px;
+}
+.page-section-about h2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding-right: 50px;
+  border-right: 5px solid black;
+  }
+  .page-section-about p{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 50px;
+    margin-right: 50px;
+    }
+.page-section-work{
+  display: flex;
+  justify-content: space-around;
+}
+.page-section-contact{
+  display: flex;
+  justify-content: space-around;
 }
