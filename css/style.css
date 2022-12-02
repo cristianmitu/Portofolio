@@ -64,7 +64,7 @@ header ul li {
   justify-content: flex-end;
   align-items: center;
   background-color: cornflowerblue;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   border-radius: 5px;
   box-shadow: 3px 3px rgb(183, 236, 243);
 }
@@ -102,8 +102,12 @@ header h1 {
   margin: 5px 0 5px 0;
 }
 #about{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 15px;
   border-right: 2px solid black;
+  height: 300px;
 }
 
 #about-text{
@@ -142,7 +146,7 @@ main{
   justify-content:space-around ;
   align-items: center;
   min-height: 100px;
-  height: 15vh;
+  height: 10vh;
   margin: 5px 0 5px 0;
   background-color: rgb(44, 131, 189);
   border-radius: 2px;
@@ -156,7 +160,7 @@ main{
   justify-content: flex-end;
   align-items: center;
   background-color: cornflowerblue;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   border-radius: 5px;
   box-shadow: 3px 3px rgb(183, 236, 243);
 }
