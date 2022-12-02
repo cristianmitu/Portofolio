@@ -79,7 +79,7 @@ header h1 {
 }
 .hero-banner{
   display: flex;
-  background-image: url('/images/pic.jpg');
+  background-image: url('../images/pic.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -166,7 +166,7 @@ main{
 }
 .work1{
   display: flex;
-  background-image: url('/images/pic.jpg');
+  background-image: url('../images/pic.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -182,7 +182,7 @@ main{
 }
 .work2{
   display: flex;
-  background-image: url('/images/pic.jpg');
+  background-image: url('../images/pic.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -198,7 +198,7 @@ main{
 }
 .work3{
   display: flex;
-  background-image: url('/images/pic.jpg');
+  background-image: url('../images/pic.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -214,7 +214,7 @@ main{
 }
 .work4{
   display: flex;
-  background-image: url('/images/pic.jpg');
+  background-image: url('../images/pic.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -230,7 +230,7 @@ main{
 }
 .work5{
   display: flex;
-  background-image: url('/images/pic.jpg');
+  background-image: url('../images/pic.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -246,7 +246,7 @@ main{
 }
 .work6{
   display: flex;
-  background-image: url('/images/pic.jpg');
+  background-image: url('../images/pic.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -262,7 +262,7 @@ main{
 }
 .work7{
   display: flex;
-  background-image: url('/images/pic.jpg');
+  background-image: url('../images/pic.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -278,7 +278,7 @@ main{
 }
 .work8{
   display: flex;
-  background-image: url('/images/pic.jpg');
+  background-image: url('../images/pic.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -294,7 +294,7 @@ main{
 }
 .work9{
   display: flex;
-  background-image: url('/images/pic.jpg');
+  background-image: url('../images/pic.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
