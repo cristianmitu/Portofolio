@@ -41,6 +41,9 @@ a {
   text-decoration: none;
   color: var(--white);
 }
+a:hover{
+  background-color: ;
+}
 nav{
   display: flex;
   justify-content: center;
@@ -58,6 +61,7 @@ header {
 }
 header ul li {
   display: flex;
+  min-width: 110px;
   margin-left: 5px;
   margin-right: 20px;
   padding: 20px;
@@ -81,7 +85,7 @@ header h1 {
   display: flex;
   background-image: url('../images/pic.jpg');
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   background-position: center;
   background-size: cover;
   min-height: 50px;
@@ -101,7 +105,20 @@ header h1 {
   color: var(--white);
   margin: 5px 0 5px 0;
 }
+main{
+  display: grid;
+  grid-template-columns: 1fr 10fr;
+  grid-template-rows: 1fr 2fr;
+  grid-template-areas: 
+                      'about about-text'
+                      'work work-sites';
+  gap: 5px;
+  margin: 5px;
+  padding: 10px;
+  align-items: center;
+}
 #about{
+  grid-area: about;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -111,31 +128,31 @@ header h1 {
 }
 
 #about-text{
+  grid-area: about-text;
   padding: 15px;
 }
 #work{
+  grid-area: work;
   display: flex;
   padding: 15px;
   border-right: 2px solid black;
   height: 500px;
   align-items: center;
+
 }
 #work-sites{
+  grid-area: work-sites;
   padding: 15px;
 }
-main{
-  display: grid;
-  grid-template-columns: 1fr 10fr;
-  grid-template-rows: 1fr 2fr;
-  gap: 5px;
-  margin: 5px;
-  padding: 10px;
-  align-items: center;
-}
+
 #work-sites{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: 
+                      'work1 work2 work3'
+                      'work4 work5 work6'
+                      'work7 work8 work9';
   gap: 5px;
   margin: 5px;  
   align-items: center;
@@ -165,10 +182,11 @@ main{
   box-shadow: 3px 3px rgb(183, 236, 243);
 }
 .work1{
+  grid-area: work1;
   display: flex;
   background-image: url('../images/pic.jpg');
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   background-position: center;
   background-size: cover;
   min-height: 50px;
@@ -181,10 +199,11 @@ main{
   color: var(--white);
 }
 .work2{
+  grid-area: work2;
   display: flex;
   background-image: url('../images/pic.jpg');
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   background-position: center;
   background-size: cover;
   min-height: 50px;
@@ -197,10 +216,11 @@ main{
   color: var(--white);
 }
 .work3{
+  grid-area: work3;
   display: flex;
   background-image: url('../images/pic.jpg');
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   background-position: center;
   background-size: cover;
   min-height: 50px;
@@ -213,10 +233,11 @@ main{
   color: var(--white);
 }
 .work4{
+  grid-area: work4;
   display: flex;
   background-image: url('../images/pic.jpg');
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   background-position: center;
   background-size: cover;
   min-height: 50px;
@@ -229,10 +250,11 @@ main{
   color: var(--white);
 }
 .work5{
+  grid-area: work5;
   display: flex;
   background-image: url('../images/pic.jpg');
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   background-position: center;
   background-size: cover;
   min-height: 50px;
@@ -245,10 +267,11 @@ main{
   color: var(--white);
 }
 .work6{
+  grid-area: work6;
   display: flex;
   background-image: url('../images/pic.jpg');
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   background-position: center;
   background-size: cover;
   min-height: 50px;
@@ -261,10 +284,11 @@ main{
   color: var(--white);
 }
 .work7{
+  grid-area: work7;
   display: flex;
   background-image: url('../images/pic.jpg');
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   background-position: center;
   background-size: cover;
   min-height: 50px;
@@ -277,10 +301,11 @@ main{
   color: var(--white);
 }
 .work8{
+  grid-area: work8;
   display: flex;
   background-image: url('../images/pic.jpg');
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   background-position: center;
   background-size: cover;
   min-height: 50px;
@@ -293,10 +318,11 @@ main{
   color: var(--white);
 }
 .work9{
+  grid-area: work9;
   display: flex;
   background-image: url('../images/pic.jpg');
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   background-position: center;
   background-size: cover;
   min-height: 50px;
@@ -307,4 +333,86 @@ main{
   justify-content: center;
   align-items: center;
   color: var(--white);
+}
+#contact ul li:hover{
+  background-color: rgb(5, 68, 110);
+  box-shadow: 3px 3px cornflowerblue;
+  transition: 0.3s linear 0.1s;
+}
+header ul li:hover{
+  background-color: rgb(5, 68, 110);
+  box-shadow: 3px 3px cornflowerblue;
+  transition: 0.3s linear 0.1s;
+}
+
+/* tablet*/
+@media only screen and (max-width: 768px) {
+nav{
+  display: flex;   
+}
+nav ul li{
+  display: none;
+}
+#contact{
+  display: flex;
+}
+#contact ul li{
+  display: none;
+}
+main{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 5% 20% 10% 70%;
+  grid-template-areas:
+                      'about'
+                      'about-text'
+                      'work'
+                      'work-sites';
+  gap: 5px;
+  margin: 55px;
+  padding: 10px;
+  align-items: center;
+}
+#about {
+  grid-area: about;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  border-right:none;
+  border-bottom: 2px solid black;
+  height: 200px;
+}
+#work {
+  grid-area: work;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  border-right:none;
+  border-bottom: 2px solid black;
+  height: 200px;
+}
+#work-sites{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: 
+                      'work1 work2'
+                      'work3 work4'
+                      'work5 work6'
+                      'work7 work8'
+                      'work9 work9';
+  gap: 5px;
+  margin: 5px;  
+  align-items: center;
+}
+
+}
+
+/* phone*/
+@media only screen and (max-width: 480px) {
+  body {
+    background-color: lightblue;
+  }
 }
