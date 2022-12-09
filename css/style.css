@@ -59,6 +59,10 @@ header {
   background-color: rgb(44, 131, 189);
   border-radius: 2px;
 }
+#navBrand{
+  display: flex;
+  justify-items: flex-start;
+}
 header ul li {
   display: flex;
   min-width: 110px;
@@ -83,15 +87,14 @@ header h1 {
 }
 .hero-banner{
   display: flex;
-  background-image: url('../images/pic.jpg');
+  background-image: url('../images/laptop.jpg');
   background-repeat: no-repeat;
-  /* background-attachment: fixed; */
   background-position: center;
   background-size: cover;
   min-height: 50px;
   min-width: 100px;
   margin: 5px 0 5px 0;
-  height: 200px;
+  height: 500px;
   width: auto;
   justify-content: center;
   align-items: center;
@@ -125,6 +128,7 @@ main{
   padding: 15px;
   border-right: 2px solid black;
   height: 300px;
+  font-size: 30px;
 }
 
 #about-text{
@@ -138,6 +142,7 @@ main{
   border-right: 2px solid black;
   height: 500px;
   align-items: center;
+  font-size: 30px;
 
 }
 #work-sites{
@@ -184,7 +189,7 @@ main{
 .work1{
   grid-area: work1;
   display: flex;
-  background-image: url('../images/pic.jpg');
+  background-image: url('../images/html.jpg');
   background-repeat: no-repeat;
   /* background-attachment: fixed; */
   background-position: center;
@@ -198,10 +203,14 @@ main{
   align-items: center;
   color: var(--white);
 }
+#work-sites .work1 a{
+  color: white;
+  font-size: 50px;
+}
 .work2{
   grid-area: work2;
   display: flex;
-  background-image: url('../images/pic.jpg');
+  background-image: url('../images/construction.jpg');
   background-repeat: no-repeat;
   /* background-attachment: fixed; */
   background-position: center;
@@ -218,7 +227,7 @@ main{
 .work3{
   grid-area: work3;
   display: flex;
-  background-image: url('../images/pic.jpg');
+  background-image: url('../images/construction.jpg');
   background-repeat: no-repeat;
   /* background-attachment: fixed; */
   background-position: center;
@@ -235,7 +244,7 @@ main{
 .work4{
   grid-area: work4;
   display: flex;
-  background-image: url('../images/pic.jpg');
+  background-image: url('../images/construction.jpg');
   background-repeat: no-repeat;
   /* background-attachment: fixed; */
   background-position: center;
@@ -252,7 +261,7 @@ main{
 .work5{
   grid-area: work5;
   display: flex;
-  background-image: url('../images/pic.jpg');
+  background-image: url('../images/construction.jpg');
   background-repeat: no-repeat;
   /* background-attachment: fixed; */
   background-position: center;
@@ -269,7 +278,7 @@ main{
 .work6{
   grid-area: work6;
   display: flex;
-  background-image: url('../images/pic.jpg');
+  background-image: url('../images/construction.jpg');
   background-repeat: no-repeat;
   /* background-attachment: fixed; */
   background-position: center;
@@ -286,7 +295,7 @@ main{
 .work7{
   grid-area: work7;
   display: flex;
-  background-image: url('../images/pic.jpg');
+  background-image: url('../images/construction.jpg');
   background-repeat: no-repeat;
   /* background-attachment: fixed; */
   background-position: center;
@@ -303,7 +312,7 @@ main{
 .work8{
   grid-area: work8;
   display: flex;
-  background-image: url('../images/pic.jpg');
+  background-image: url('../images/construction.jpg');
   background-repeat: no-repeat;
   /* background-attachment: fixed; */
   background-position: center;
@@ -320,7 +329,7 @@ main{
 .work9{
   grid-area: work9;
   display: flex;
-  background-image: url('../images/pic.jpg');
+  background-image: url('../images/construction.jpg');
   background-repeat: no-repeat;
   /* background-attachment: fixed; */
   background-position: center;
@@ -410,9 +419,5 @@ main{
 
 }
 
-/* phone*/
-@media only screen and (max-width: 480px) {
-  body {
-    background-color: lightblue;
-  }
-}
+
+
